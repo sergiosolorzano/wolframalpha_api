@@ -1,20 +1,26 @@
 # wolframalpha_api
-Call to Wolfram Alpha Math Show Steps API: shows steps to solve a math problem
+Call to Wolfram Alpha Math Show Steps API: shows step by step the solution to a math problem
 
-##To Make calls to Wolfram Show Steps:
-- Install certificate in this same folder
+## To Make calls to Wolfram Show Steps:
+- Create in this same folder your self-signed SSL certificate for localhost
 
 - Get your WolframAlpha API key - currently free avaialble - by creating [your developer account](https://account.wolfram.com/login/create)
 
-- Install node.js and run nodejs server:
-G:>node app.js
-Server running at https://localhost:8000/
+- Create private_data.js file in this same folder with this code, create a wolfram alpha webapp API key and enter it here:
 
-- Create private_data.js file in this same folder:
-const mydata = 
+   const mydata = 
   {
     appid:"YOUR_API_KEY",
   };
 module.exports = { mydata };
 
+- Install node.js and run nodejs server:
+G:>node app.js
+Server running at https://localhost:8000/
+
 - on browser open webapp https://localhost:8000/ will call public/index.html
+
+## Entering your query in your webapp:
+See [Examples](https://www.wolframalpha.com/examples/mathematics) what to enter in your query.
+- Example to solve matrices treat them as an array: solve {{.4,.3,.25},{.1,.4,.25},{.5,.3,.5}}.{{100},{200},{700}}
+<img width="346" alt="image" src="https://user-images.githubusercontent.com/24430655/229371905-89371b57-bb5c-42da-8c0b-884a361fedab.png">
