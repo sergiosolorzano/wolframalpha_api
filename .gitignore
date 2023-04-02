@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!app.js
+!how-to.txt
+
+#but add this dir
+!public/
+public/*
+!public/index.html

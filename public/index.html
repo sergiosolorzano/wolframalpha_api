@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wolfram Alpha API Example</title>
+</head>
+<body>
+    <h1>Ask a Question</h1>
+    <form onsubmit="event.preventDefault(); getAnswer()">
+        <label for="query">Query:</label>
+        <input type="text" id="query" name="query">
+        <button type="submit">Get Answer</button>
+    </form>
+    <p id="answer"></p>
+    <script>
+        async function getAnswer() {
+    const query = document.getElementById("query").value;
+    console.log('Query:', query); // Debugging statement
+    const response = await fetch(`https://localhost:8000/query?query=${encodeURIComponent(query)}`);
+    const data = await response.text();
+    console.log('Data:', data); // Debugging statement
+    const formattedData = data.replace(/\n/g, "<br>");
+    document.getElementById("answer").innerHTML = formattedData;
+}
+    </script>
+</body>
+</html>

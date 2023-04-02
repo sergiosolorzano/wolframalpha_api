@@ -1,0 +1,19 @@
+To create your WebApps to make calls to Wolfram Alpha API:
+
+- Install certificate in this same folder
+
+- Get your WolframAlpha API key - currently free avaialble - by creating your developer account: https://products.wolframalpha.com/docs/WolframAlpha-API-Reference.pdf
+
+- Run nodejs server (you'll need node.js installed in your system):
+G:>node app.js
+Server running at https://localhost:8000/
+
+- Create private_data.js file in this same folder:
+const mydata = 
+  {
+    appid:"YOUR_API_KEY",
+  };
+module.exports = { mydata };
+
+- on browser open https://localhost:8000/ will call public/index.html
+
