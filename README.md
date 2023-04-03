@@ -22,5 +22,7 @@ Server running at https://localhost:8000/
 
 ## Entering your query in your webapp:
 See [Examples](https://www.wolframalpha.com/examples/mathematics) what to enter in your query.
-- Example to solve matrices treat them as an array: solve {{.4,.3,.25},{.1,.4,.25},{.5,.3,.5}}.{{100},{200},{700}}
+- Example to solve matrices treat them as an array: 
+<img width="215" alt="image" src="https://user-images.githubusercontent.com/24430655/229432136-095696d0-b7f9-4219-9af7-1bffc86b7f07.png">
+solve {{.4,.3,.25},{.1,.4,.25},{.5,.3,.5}}.{{100},{200},{700}}
 <img width="346" alt="image" src="https://user-images.githubusercontent.com/24430655/229371905-89371b57-bb5c-42da-8c0b-884a361fedab.png">
